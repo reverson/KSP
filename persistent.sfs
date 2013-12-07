@@ -271,6 +271,10 @@ GAME
 						crews = 0
 					}
 				}
+				Escape
+				{
+					completed = 244908253.701297
+				}
 				Landing
 				{
 					completed = 244876414.827859
@@ -292,6 +296,45 @@ GAME
 						crews = 0
 					}
 				}
+				ReturnFromFlyBy
+				{
+					completed = 245040108.656887
+					vessel
+					{
+						name = lander mk3
+						flag = Squad/Flags/default
+					}
+					crew
+					{
+						crews = 0
+					}
+				}
+				ReturnFromOrbit
+				{
+					completed = 245040108.656887
+					vessel
+					{
+						name = lander mk3
+						flag = Squad/Flags/default
+					}
+					crew
+					{
+						crews = 0
+					}
+				}
+				ReturnFromSurface
+				{
+					completed = 245040108.656887
+					vessel
+					{
+						name = lander mk3
+						flag = Squad/Flags/default
+					}
+					crew
+					{
+						crews = 0
+					}
+				}
 			}
 		}
 	}
@@ -299,7 +342,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 5, 6, 7, 8, 9
-		sci = 223.3961
+		sci = 104.7338
 		Tech
 		{
 			id = start
@@ -524,6 +567,13 @@ GAME
 			part = cupola
 			part = mk2LanderCabin
 			part = RCSTank1-2
+		}
+		Tech
+		{
+			id = veryHeavyRocketry
+			state = Available
+			part = liquidEngine1-2
+			part = fuelTank3-2
 		}
 		Science
 		{
@@ -1060,9 +1110,9 @@ GAME
 			id = mysteryGoo@MunSrfLandedCanyons
 			title = Mystery Goo™ Observation from the Mun's Canyons
 			dsc = 1
-			scv = 0.01409064
+			scv = 0.01095941
 			sbv = 4
-			sci = 70.98547
+			sci = 71.21092
 			cap = 72
 		}
 		Science
@@ -1070,9 +1120,9 @@ GAME
 			id = mobileMaterialsLab@MunSrfLandedCanyons
 			title = Materials Study from the Mun's Canyons
 			dsc = 1
-			scv = 0.05398244
+			scv = 0.04627031
 			sbv = 4
-			sci = 132.4425
+			sci = 133.5222
 			cap = 140
 		}
 		Science
@@ -1080,9 +1130,9 @@ GAME
 			id = evaReport@MunInSpaceLowCanyons
 			title = EVA Report from space just above the Mun's Canyons
 			dsc = 1
-			scv = 0.216
+			scv = 0.1296
 			sbv = 3
-			sci = 23.52
+			sci = 26.112
 			cap = 30
 		}
 		Science
@@ -1090,9 +1140,9 @@ GAME
 			id = surfaceSample@MunSrfLandedCanyons
 			title = Surface Sample from the Mun's Canyons
 			dsc = 1
-			scv = 0.0639905
+			scv = 0.03999414
 			sbv = 4
-			sci = 149.7615
+			sci = 153.6009
 			cap = 160
 		}
 		Science
@@ -1100,9 +1150,9 @@ GAME
 			id = evaReport@MunSrfLandedCanyons
 			title = EVA Report from the Mun's Canyons
 			dsc = 1
-			scv = 0.216
+			scv = 0.1296
 			sbv = 4
-			sci = 31.36
+			sci = 34.816
 			cap = 40
 		}
 		Science
@@ -1200,9 +1250,9 @@ GAME
 			id = mobileMaterialsLab@MinmusSrfLanded
 			title = Materials Study from Minmus's surface
 			dsc = 1
-			scv = 0.4668441
+			scv = 0.05328535
 			sbv = 5
-			sci = 93.30229
+			sci = 165.6751
 			cap = 175
 		}
 		Science
@@ -1210,9 +1260,9 @@ GAME
 			id = mysteryGoo@MinmusSrfLanded
 			title = Mystery Goo™ Observation from Minmus's surface
 			dsc = 1
-			scv = 0.2915424
+			scv = 0.03009542
 			sbv = 5
-			sci = 63.76118
+			sci = 87.29141
 			cap = 90
 		}
 		Science
@@ -1220,9 +1270,9 @@ GAME
 			id = temperatureScan@MinmusSrfLanded
 			title = Temperature Scan from Minmus's surface
 			dsc = 1
-			scv = 0.04384743
+			scv = 0.002371292
 			sbv = 5
-			sci = 47.80763
+			sci = 49.88144
 			cap = 50
 		}
 		Science
@@ -1230,9 +1280,9 @@ GAME
 			id = crewReport@MinmusSrfLanded
 			title = Crew Report from Minmus's surface
 			dsc = 1
-			scv = 0.009733295
+			scv = 0.003649998
 			sbv = 5
-			sci = 39.61067
+			sci = 39.854
 			cap = 40
 		}
 		Science
@@ -1240,9 +1290,9 @@ GAME
 			id = evaReport@MinmusInSpaceLow
 			title = EVA Report while in space near Minmus
 			dsc = 1
-			scv = 0.6
+			scv = 0.04320002
 			sbv = 4
-			sci = 16
+			sci = 38.272
 			cap = 40
 		}
 		Science
@@ -1250,9 +1300,9 @@ GAME
 			id = surfaceSample@MinmusSrfLanded
 			title = Surface Sample from Minmus's surface
 			dsc = 1
-			scv = 0.4158376
+			scv = 0.02717728
 			sbv = 5
-			sci = 116.8325
+			sci = 194.5645
 			cap = 200
 		}
 		Science
@@ -1260,16 +1310,66 @@ GAME
 			id = evaReport@MinmusSrfLanded
 			title = EVA Report from Minmus's surface
 			dsc = 1
-			scv = 0.36
+			scv = 0.2268
 			sbv = 5
-			sci = 32
+			sci = 38.66
 			cap = 50
+		}
+		Science
+		{
+			id = mobileMaterialsLab@MinmusInSpaceLow
+			title = Materials Study while in space near Minmus
+			dsc = 1
+			scv = 0.4019403
+			sbv = 4
+			sci = 83.72836
+			cap = 140
+		}
+		Science
+		{
+			id = temperatureScan@MinmusInSpaceLow
+			title = Temperature Scan while in space near Minmus
+			dsc = 1
+			scv = 0.3060429
+			sbv = 4
+			sci = 27.75829
+			cap = 40
+		}
+		Science
+		{
+			id = mysteryGoo@MinmusInSpaceLow
+			title = Mystery Goo™ Observation while in space near Minmus
+			dsc = 1
+			scv = 0.3052176
+			sbv = 4
+			sci = 50.02433
+			cap = 72
+		}
+		Science
+		{
+			id = crewReport@MinmusInSpaceLow
+			title = Crew Report while in space near Minmus
+			dsc = 1
+			scv = 0.4921875
+			sbv = 4
+			sci = 16.25
+			cap = 32
+		}
+		Science
+		{
+			id = recovery@MinmusSurfaced
+			title = Recovery of a vessel returned from the surface of Minmus
+			dsc = 1
+			scv = 0.1666667
+			sbv = 37.5
+			sci = 37.5
+			cap = 45
 		}
 	}
 	FLIGHTSTATE
 	{
 		version = 0.22.0
-		UT = 244899152.504019
+		UT = 245042936.031885
 		activeVessel = 0
 		VESSEL
 		{
@@ -1298,13 +1398,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 101968.032846264
 				ECC = 1
 				INC = NaN
-				LPE = 156.509607938189
-				LAN = 57.0929748334394
-				MNA = -8.40714670366795
-				EPH = 244899141.304013
+				LPE = 131.299304248184
+				LAN = 44.1599645580497
+				MNA = 3.14159265358979
+				EPH = 245042931.831883
 				REF = 2
 				OBJ = 0
 			}
@@ -3161,13 +3261,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 101986.947134809
+				SMA = 101967.858047236
 				ECC = 1
 				INC = NaN
-				LPE = 156.510339683954
-				LAN = 57.0929748334394
+				LPE = 131.300138471354
+				LAN = 44.1599645580497
 				MNA = 3.14159265358979
-				EPH = 244899141.304013
+				EPH = 245042931.831883
 				REF = 2
 				OBJ = 0
 			}
@@ -3310,10 +3410,10 @@ GAME
 				SMA = 0
 				ECC = 1
 				INC = NaN
-				LPE = 99.609103412834
-				LAN = 57.0929748334394
+				LPE = 124.915070933007
+				LAN = 44.1599645580497
 				MNA = -8.40714670366795
-				EPH = 244899141.304013
+				EPH = 245042931.831883
 				REF = 2
 				OBJ = 0
 			}
@@ -5241,13 +5341,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 0
+				SMA = 101143.725902215
 				ECC = 1
 				INC = NaN
-				LPE = 99.6095784908316
-				LAN = 57.0929748334394
-				MNA = -8.40714670366795
-				EPH = 244899141.304013
+				LPE = 124.91566389253
+				LAN = 44.1599645580497
+				MNA = 3.14159265358979
+				EPH = 245042931.831883
 				REF = 2
 				OBJ = 4
 			}
@@ -5533,10 +5633,10 @@ GAME
 				SMA = NaN
 				ECC = 1
 				INC = NaN
-				LPE = 143.32811421663
-				LAN = 57.0929748334394
+				LPE = 135.521366107995
+				LAN = 44.1599645580497
 				MNA = -8.40714670366795
-				EPH = 244899141.304013
+				EPH = 245042931.831883
 				REF = 2
 				OBJ = 0
 			}
@@ -7709,16 +7809,16 @@ GAME
 			landed = True
 			landedAt = 
 			splashed = False
-			met = 317481.048673421
+			met = 887012.743510306
 			lct = 244015328.237725
 			root = 0
-			lat = 35.6032325153786
-			lon = -45.8003114194466
-			alt = 785.834741401311
-			hgt = 4.88349
-			nrm = 0.008399636,0.9999305,-0.008292705
-			rot = 0.4655294,0.6488602,-0.1882821,-0.5716755
-			CoM = 0.0007866025,-2.546026,0.009364784
+			lat = 35.6032332262112
+			lon = -45.8003114927352
+			alt = 785.829319045821
+			hgt = 4.880505
+			nrm = 0.008062646,0.9999329,-0.008310229
+			rot = 0.4654104,0.6489297,-0.1882539,-0.5717025
+			CoM = 0.000873208,-2.546062,0.009492099
 			stg = 2
 			prst = False
 			ref = 2047150112
@@ -7727,13 +7827,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 0
 				ECC = 1
 				INC = NaN
-				LPE = 45.4908345793373
-				LAN = 57.0929748334394
+				LPE = 35.9028357705938
+				LAN = 44.1599645580497
 				MNA = -8.40714670366795
-				EPH = 244899141.304013
+				EPH = 245042931.831883
 				REF = 2
 				OBJ = 0
 			}
@@ -7754,7 +7854,7 @@ GAME
 				srfN = None, -1
 				attN = bottom, 1
 				mass = 1.25
-				temp = -13.23215
+				temp = -0.0007788236
 				expt = 0.5
 				state = 0
 				connected = True
@@ -7982,7 +8082,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 50
+					amount = 5.24863345548511
 					maxAmount = 50
 					flowState = True
 					flowMode = Both
@@ -8006,7 +8106,7 @@ GAME
 				attN = top, 0
 				attN = bottom, 12
 				mass = 0.2
-				temp = -13.30307
+				temp = -0.0007788679
 				expt = 0.5
 				state = 0
 				connected = True
@@ -8130,7 +8230,7 @@ GAME
 				attm = 1
 				srfN = srfAttach, 1
 				mass = 0.0175
-				temp = -13.18336
+				temp = -0.0007748142
 				expt = 0.5
 				state = 0
 				connected = True
@@ -8147,7 +8247,7 @@ GAME
 				{
 					name = ModuleDeployableSolarPanel
 					isEnabled = True
-					currentRotation = (0.5984515, 0.5984607, 0.3767153, -0.3765451)
+					currentRotation = (0.5410142, 0.5410574, 0.4553806, -0.4551804)
 					stateString = EXTENDED
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
@@ -8209,7 +8309,7 @@ GAME
 				attm = 1
 				srfN = srfAttach, 1
 				mass = 0.0175
-				temp = -13.1679
+				temp = -0.0007729909
 				expt = 0.5
 				state = 0
 				connected = True
@@ -8226,7 +8326,7 @@ GAME
 				{
 					name = ModuleDeployableSolarPanel
 					isEnabled = True
-					currentRotation = (0.6539596, -0.2687172, 0.2684855, -0.6542504)
+					currentRotation = (0.6736898, -0.2143861, 0.2142114, -0.6740136)
 					stateString = EXTENDED
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
@@ -8288,7 +8388,7 @@ GAME
 				attm = 1
 				srfN = srfAttach, 1
 				mass = 0.005
-				temp = -13.15244
+				temp = -0.0007711752
 				expt = 0.5
 				state = 0
 				connected = True
@@ -8367,7 +8467,7 @@ GAME
 				attm = 1
 				srfN = srfAttach, 1
 				mass = 0.15
-				temp = -13.13698
+				temp = -0.0007693593
 				expt = 0.5
 				state = 0
 				connected = True
@@ -8386,7 +8486,7 @@ GAME
 					isEnabled = True
 					status = Locked
 					animSwitch = False
-					animTime = 0.001798749
+					animTime = 0
 					animSpeed = 1
 					EVENTS
 					{
@@ -8491,7 +8591,7 @@ GAME
 				attm = 1
 				srfN = srfAttach, 1
 				mass = 0.03
-				temp = -13.12152
+				temp = -0.0007675298
 				expt = 0.5
 				state = 0
 				connected = True
@@ -8509,17 +8609,17 @@ GAME
 					name = ModuleAnimateGeneric
 					isEnabled = True
 					status = Locked
-					animSwitch = False
-					animTime = 0.005859737
+					animSwitch = True
+					animTime = 0.993088
 					animSpeed = 1
 					EVENTS
 					{
 						Toggle
 						{
 							active = True
-							guiActive = True
+							guiActive = False
 							guiIcon = Toggle
-							guiName = Extend
+							guiName = Retract
 							category = Toggle
 							guiActiveUnfocused = False
 							unfocusedRange = 2
@@ -8538,15 +8638,15 @@ GAME
 				{
 					name = ModuleAnimateGeneric
 					isEnabled = True
-					status = Locked
+					status = Moving...
 					animSwitch = False
-					animTime = 0.009447575
+					animTime = 0.8806931
 					animSpeed = 1
 					EVENTS
 					{
 						Toggle
 						{
-							active = True
+							active = False
 							guiActive = False
 							guiIcon = Toggle
 							guiName = Blink Lights
@@ -8573,7 +8673,7 @@ GAME
 					{
 						StartTransmission
 						{
-							active = True
+							active = False
 							guiActive = True
 							guiIcon = Transmit Data
 							guiName = Transmit Data
@@ -8584,7 +8684,7 @@ GAME
 						}
 						StopTransmission
 						{
-							active = False
+							active = True
 							guiActive = True
 							guiIcon = Stop Transmitting
 							guiName = Stop Transmitting
@@ -8615,7 +8715,7 @@ GAME
 				attm = 1
 				srfN = srfAttach, 1
 				mass = 0.005
-				temp = -13.1061
+				temp = -0.0007657217
 				expt = 0.5
 				state = 0
 				connected = True
@@ -8736,7 +8836,7 @@ GAME
 				attm = 1
 				srfN = srfAttach, 1
 				mass = 0.005
-				temp = -13.09075
+				temp = -0.0007639215
 				expt = 0.5
 				state = 0
 				connected = True
@@ -8785,7 +8885,7 @@ GAME
 					{
 						DeployExperiment
 						{
-							active = False
+							active = True
 							guiActive = True
 							guiIcon = Deploy
 							guiName = Log Pressure Data
@@ -8857,7 +8957,7 @@ GAME
 				attm = 1
 				srfN = srfAttach, 1
 				mass = 0.02
-				temp = -13.07553
+				temp = -0.0007621193
 				expt = 0.5
 				state = 0
 				connected = True
@@ -8873,7 +8973,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 400
+					amount = 186.607516201213
 					maxAmount = 400
 					flowState = True
 					flowMode = Both
@@ -8895,7 +8995,7 @@ GAME
 				attm = 1
 				srfN = srfAttach, 1
 				mass = 0.15
-				temp = -13.06043
+				temp = -0.0007603211
 				expt = 0.5
 				state = 0
 				connected = True
@@ -8979,7 +9079,7 @@ GAME
 				attm = 1
 				srfN = srfAttach, 1
 				mass = 0.15
-				temp = -13.04501
+				temp = -0.0007585261
 				expt = 0.5
 				state = 0
 				connected = True
@@ -9065,7 +9165,7 @@ GAME
 				attN = bottom, 13
 				attN = top, 1
 				mass = 0.05
-				temp = -13.09673
+				temp = -0.0007643492
 				expt = 0.5
 				state = 0
 				connected = True
@@ -9124,7 +9224,7 @@ GAME
 				attN = top, 14
 				attN = bottom, 12
 				mass = 0.08
-				temp = -13.16695
+				temp = -0.0007679262
 				expt = 0.5
 				state = 1
 				connected = True
@@ -9156,7 +9256,7 @@ GAME
 				attN = top, 13
 				attN = None, -1
 				mass = 1
-				temp = -13.28578
+				temp = -0.0007716297
 				expt = 0.5
 				state = 1
 				connected = True
@@ -9205,7 +9305,7 @@ GAME
 				sym = 21
 				srfN = srfAttach, 14
 				mass = 0.9
-				temp = -13.17506
+				temp = -0.0007688938
 				expt = 0.5
 				state = 1
 				connected = True
@@ -9326,7 +9426,7 @@ GAME
 				sym = 22
 				srfN = srfAttach, 15
 				mass = 0.05
-				temp = -13.12033
+				temp = -0.000765643
 				expt = 0.5
 				state = 1
 				connected = True
@@ -9346,7 +9446,7 @@ GAME
 					savedAnimationTime = 1
 					savedAnimationSpeed = 0
 					savedLegState = 3
-					savedLocalPosition = (-5.72958E-06, -0.1199014, -0.694204)
+					savedLocalPosition = (3.287026E-05, -0.1201589, -0.6906038)
 					EVENTS
 					{
 						LowerLeg
@@ -9419,7 +9519,7 @@ GAME
 				sym = 21
 				srfN = srfAttach, 14
 				mass = 0.9
-				temp = -13.16533
+				temp = -0.0007674341
 				expt = 0.5
 				state = 1
 				connected = True
@@ -9540,7 +9640,7 @@ GAME
 				sym = 22
 				srfN = srfAttach, 17
 				mass = 0.05
-				temp = -13.11557
+				temp = -0.0007642449
 				expt = 0.5
 				state = 1
 				connected = True
@@ -9560,7 +9660,7 @@ GAME
 					savedAnimationTime = 1
 					savedAnimationSpeed = 0
 					savedLegState = 3
-					savedLocalPosition = (-3.916384E-05, -0.1200332, -0.6490464)
+					savedLocalPosition = (-0.0001512088, -0.1200291, -0.6469372)
 					EVENTS
 					{
 						LowerLeg
@@ -9633,7 +9733,7 @@ GAME
 				sym = 21
 				srfN = srfAttach, 14
 				mass = 0.9
-				temp = -13.15561
+				temp = -0.0007659776
 				expt = 0.5
 				state = 1
 				connected = True
@@ -9754,7 +9854,7 @@ GAME
 				sym = 22
 				srfN = srfAttach, 19
 				mass = 0.05
-				temp = -13.11079
+				temp = -0.0007628496
 				expt = 0.5
 				state = 1
 				connected = True
@@ -9774,7 +9874,7 @@ GAME
 					savedAnimationTime = 1
 					savedAnimationSpeed = 0
 					savedLegState = 3
-					savedLocalPosition = (-4.334808E-05, -0.1199859, -0.6491277)
+					savedLocalPosition = (-5.302799E-05, -0.1199035, -0.6468654)
 					EVENTS
 					{
 						LowerLeg
@@ -9847,7 +9947,7 @@ GAME
 				sym = 19
 				srfN = srfAttach, 14
 				mass = 0.9
-				temp = -13.14575
+				temp = -0.0007645226
 				expt = 0.5
 				state = 1
 				connected = True
@@ -9968,7 +10068,7 @@ GAME
 				sym = 20
 				srfN = srfAttach, 21
 				mass = 0.05
-				temp = -13.10592
+				temp = -0.0007614563
 				expt = 0.5
 				state = 1
 				connected = True
@@ -9988,7 +10088,7 @@ GAME
 					savedAnimationTime = 1
 					savedAnimationSpeed = 0
 					savedLegState = 3
-					savedLocalPosition = (-2.728261E-05, -0.1199356, -0.6943612)
+					savedLocalPosition = (3.012843E-05, -0.1200555, -0.6905026)
 					EVENTS
 					{
 						LowerLeg
@@ -10061,7 +10161,7 @@ GAME
 				sym = 26
 				srfN = srfAttach, 14
 				mass = 0.015
-				temp = -13.12152
+				temp = -0.0007623112
 				expt = 0.5
 				state = 1
 				connected = True
@@ -10140,7 +10240,7 @@ GAME
 				sym = 26
 				srfN = srfAttach, 14
 				mass = 0.015
-				temp = -13.10804
+				temp = -0.0007606444
 				expt = 0.5
 				state = 1
 				connected = True
@@ -10219,7 +10319,7 @@ GAME
 				sym = 26
 				srfN = srfAttach, 14
 				mass = 0.015
-				temp = -13.09416
+				temp = -0.0007589825
 				expt = 0.5
 				state = 1
 				connected = True
@@ -10298,7 +10398,7 @@ GAME
 				sym = 25
 				srfN = srfAttach, 14
 				mass = 0.015
-				temp = -13.08068
+				temp = -0.0007573223
 				expt = 0.5
 				state = 1
 				connected = True
@@ -10377,7 +10477,7 @@ GAME
 				sym = 30
 				srfN = srfAttach, 14
 				mass = 0.075
-				temp = -13.06663
+				temp = -0.0007556645
 				expt = 0.5
 				state = 1
 				connected = True
@@ -10418,7 +10518,7 @@ GAME
 				sym = 30
 				srfN = srfAttach, 14
 				mass = 0.075
-				temp = -13.05294
+				temp = -0.0007540026
 				expt = 0.5
 				state = 1
 				connected = True
@@ -10459,7 +10559,7 @@ GAME
 				sym = 30
 				srfN = srfAttach, 14
 				mass = 0.075
-				temp = -13.03946
+				temp = -0.0007523447
 				expt = 0.5
 				state = 1
 				connected = True
@@ -10500,7 +10600,7 @@ GAME
 				sym = 29
 				srfN = srfAttach, 14
 				mass = 0.075
-				temp = -13.02567
+				temp = -0.0007506883
 				expt = 0.5
 				state = 1
 				connected = True
@@ -10538,7 +10638,7 @@ GAME
 				attm = 1
 				srfN = srfAttach, 0
 				mass = 0.05
-				temp = -13.13319
+				temp = -0.0007726752
 				expt = 0.5
 				state = 0
 				connected = True
@@ -10606,7 +10706,7 @@ GAME
 				attm = 1
 				srfN = srfAttach, 0
 				mass = 0.05
-				temp = -13.11758
+				temp = -0.0007708512
 				expt = 0.5
 				state = 0
 				connected = True
@@ -10663,7 +10763,7 @@ GAME
 				Stage = False, 244069518.096898
 				Gear = True, 244080429.975934
 				Light = False, 244212926.382638
-				RCS = False, 244199755.489939
+				RCS = True, 244902275.8012
 				SAS = False, 244199740.129931
 				Brakes = False, 0
 				Abort = False, 0
@@ -10688,16 +10788,16 @@ GAME
 			landed = True
 			landedAt = 
 			splashed = False
-			met = 128636.694550425
+			met = 698168.38938731
 			lct = 244204172.591848
 			root = 0
-			lat = 35.6005843139936
-			lon = -45.7951982533826
-			alt = 784.382366972131
-			hgt = 0.3574384
-			nrm = 0.2621378,0.9647132,0.02474713
-			rot = 0.1295081,0.7869898,-0.4383241,0.4144234
-			CoM = 0,0,0
+			lat = 35.6005847295186
+			lon = -45.7951984338704
+			alt = 784.381263077928
+			hgt = 0.3574372
+			nrm = 0.2622447,0.9646839,0.02475119
+			rot = 0.129508,0.7869898,-0.4383241,0.4144233
+			CoM = -9.303814E-07,-2.064932E-07,3.529459E-08
 			stg = 0
 			prst = False
 			ref = 0
@@ -10706,13 +10806,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 0
+				SMA = NaN
 				ECC = 1
 				INC = NaN
-				LPE = 45.4863708344005
-				LAN = 57.0929748334394
-				MNA = -8.40714670366795
-				EPH = 244899141.304013
+				LPE = 35.9001803113069
+				LAN = 44.1599645580497
+				MNA = 0
+				EPH = 245042931.831883
 				REF = 2
 				OBJ = 0
 			}
@@ -10732,7 +10832,7 @@ GAME
 				attm = 0
 				srfN = None, -1
 				mass = 0.01
-				temp = -0.0120699
+				temp = -13.07298
 				expt = 0.5
 				state = 0
 				connected = True
@@ -10827,45 +10927,45 @@ GAME
 		}
 		VESSEL
 		{
-			pid = 437127944e0b4706a7460da38171fd10
-			name = lander mk3
-			type = Ship
+			pid = 00000000000000000000000000000000
+			name = minmus landing 1
+			type = Flag
 			sit = LANDED
 			landed = True
 			landedAt = 
 			splashed = False
-			met = 540369.115581185
-			lct = 244358772.188432
+			met = 96.9800520241261
+			lct = 244902487.741313
 			root = 0
-			lat = -13.7395454850589
-			lon = -11.2991285372637
-			alt = 4.61062808186398
-			hgt = 4.758138
-			nrm = 0.0004879832,1,7.233024E-05
-			rot = -0.7408455,-0.5305308,-0.2634933,0.3166329
-			CoM = 0.000333488,-2.672951,0.005821049
-			stg = 2
+			lat = -13.6275071475436
+			lon = -11.3670406801854
+			alt = 0.207322020702122
+			hgt = 0.3471824
+			nrm = 0.001219481,0.9999424,-0.01067965
+			rot = -0.4020202,-0.4097132,0.6790923,-0.4575462
+			CoM = 0,0,0
+			stg = 0
 			prst = False
-			ref = 1636713698
-			cPch = 
-			cHdg = 
-			cMod = 0
+			ref = 0
+			cPch = 0
+			cHdg = 0
+			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 30078.5518102913
 				ECC = 1
 				INC = NaN
-				LPE = 69.4494266122082
-				LAN = 57.0929748334394
-				MNA = -8.40714670366795
-				EPH = 244899141.304013
+				LPE = 143.284830045668
+				LAN = 44.1599645580497
+				MNA = 3.14159265358979
+				EPH = 245042931.831883
 				REF = 3
 				OBJ = 0
 			}
 			PART
 			{
-				name = Mark1Cockpit
-				uid = 1636713698
+				name = flag
+				uid = 2783044240
 				mid = 4234490162
 				parent = 0
 				position = 0,0,0
@@ -10873,20 +10973,165 @@ GAME
 				mirror = 1,1,1
 				istg = 0
 				dstg = 0
-				sqor = 0
-				sidx = 0
+				sqor = -1
+				sidx = -1
 				attm = 0
 				srfN = None, -1
-				attN = bottom, 1
-				mass = 1.25
-				temp = -0.07767939
+				mass = 0.01
+				temp = -0.003450443
 				expt = 0.5
 				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
-				rTrf = Mark1Cockpit (lander mk3)
-				crew = 0
+				rTrf = flag(Clone)
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = FlagSite
+					isEnabled = False
+					placedBy = Jebediah Kerman
+					PlaqueText = 
+					state = Placed
+					EVENTS
+					{
+						TakeDown
+						{
+							active = True
+							guiActive = False
+							guiIcon = Take Down
+							guiName = Take Down
+							category = Take Down
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						PickUp
+						{
+							active = False
+							guiActive = False
+							guiIcon = Pick Up
+							guiName = Pick Up
+							category = Pick Up
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ReadPlaque
+						{
+							active = True
+							guiActive = False
+							guiIcon = Read Plaque
+							guiName = Read Plaque
+							category = Read Plaque
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FlagDecal
+					isEnabled = False
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = True, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 0
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+		}
+		VESSEL
+		{
+			pid = 2b9a032601e64ee0875622973190833a
+			name = valero mk1
+			type = Probe
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 2656.29490679502
+			lct = 245040221.436947
+			root = 0
+			lat = -0.150537364880294
+			lon = -85.2336735872044
+			alt = 200777.395101689
+			hgt = -1
+			nrm = -0.9231501,0.06080721,0.3796003
+			rot = 0.7749165,-0.3091592,0.09027269,0.543853
+			CoM = 0.0005077124,-5.330688,-0.001303792
+			stg = 0
+			prst = False
+			ref = 211285220
+			cPch = 
+			cHdg = 
+			cMod = 0
+			ORBIT
+			{
+				SMA = 811546.468750384
+				ECC = 0.0201952353236995
+				INC = 0.379202293313318
+				LPE = 253.175551251758
+				LAN = 9.35312037845711
+				MNA = 5.44457274299233
+				EPH = 245042877.731854
+				REF = 1
+				OBJ = 0
+			}
+			PART
+			{
+				name = probeCoreSphere
+				uid = 211285220
+				mid = 38231759
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = bottom, 1
+				mass = 0.05
+				temp = -40.35058
+				expt = 0
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = probeCoreSphere (valero mk1)
 				EVENTS
 				{
 				}
@@ -10922,17 +11167,6 @@ GAME
 							unfocusedRange = 2
 							externalToEVAOnly = True
 						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleSAS
-					isEnabled = True
-					EVENTS
-					{
 					}
 					ACTIONS
 					{
@@ -10976,96 +11210,10 @@ GAME
 				}
 				MODULE
 				{
-					name = ModuleScienceExperiment
-					isEnabled = True
-					Deployed = False
-					EVENTS
-					{
-						DeployExperiment
-						{
-							active = True
-							guiActive = True
-							guiIcon = Deploy
-							guiName = Crew Report
-							category = Deploy
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ReviewDataEvent
-						{
-							active = False
-							guiActive = True
-							guiIcon = Review Data
-							guiName = Review Report
-							category = Review Data
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ResetExperiment
-						{
-							active = False
-							guiActive = True
-							guiIcon = Reset
-							guiName = Discard Crew Report
-							category = Reset
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ResetExperimentExternal
-						{
-							active = False
-							guiActive = False
-							guiIcon = Reset
-							guiName = Discard Crew Report
-							category = Reset
-							guiActiveUnfocused = True
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						DeployAction
-						{
-							actionGroup = Custom01, Custom02
-						}
-						ResetAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleScienceContainer
+					name = ModuleSAS
 					isEnabled = True
 					EVENTS
 					{
-						StoreDataExternalEvent
-						{
-							active = True
-							guiActive = False
-							guiIcon = 
-							guiName = Store Experiments
-							category = 
-							guiActiveUnfocused = True
-							unfocusedRange = 1.3
-							externalToEVAOnly = True
-						}
-						ReviewDataEvent
-						{
-							active = False
-							guiActive = True
-							guiIcon = Review Data
-							guiName = Review Stored Data (0)
-							category = Review Data
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
 					}
 					ACTIONS
 					{
@@ -11083,7 +11231,6 @@ GAME
 					}
 					Surfaced
 					{
-						at = Minmus
 					}
 					Flew
 					{
@@ -11091,1165 +11238,84 @@ GAME
 					}
 					FlewBy
 					{
-						at = Minmus
 					}
 					Orbited
 					{
 						at = Kerbin
-						at = Minmus
 					}
 					SubOrbited
 					{
 						at = Kerbin
-						at = Minmus
 					}
 				}
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 50
-					maxAmount = 50
+					amount = 4.56666262432918E-05
+					maxAmount = 10
 					flowState = True
 					flowMode = Both
 				}
 			}
 			PART
 			{
-				name = science.module
-				uid = 3462148665
-				mid = 4234490162
+				name = batteryBankMini
+				uid = 390936431
+				mid = 38231759
 				parent = 0
-				position = 0,-0.833749771118164,0
+				position = 0,-0.438329696655273,0
 				rotation = 0,0,0,1
 				mirror = 1,1,1
 				istg = 0
 				dstg = 0
 				sqor = -1
 				sidx = -1
-				attm = 0
-				srfN = srfAttach, 0
-				attN = top, 0
-				attN = bottom, 12
-				mass = 0.2
-				temp = -0.07809657
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = science.module
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleAnimateGeneric
-					isEnabled = True
-					status = Locked
-					animSwitch = False
-					animTime = 0.006784897
-					animSpeed = 1
-					EVENTS
-					{
-						Toggle
-						{
-							active = True
-							guiActive = False
-							guiIcon = Toggle
-							guiName = Deploy
-							category = Toggle
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleScienceExperiment
-					isEnabled = True
-					Deployed = False
-					EVENTS
-					{
-						DeployExperiment
-						{
-							active = True
-							guiActive = True
-							guiIcon = Deploy
-							guiName = Observe Materials Bay
-							category = Deploy
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ReviewDataEvent
-						{
-							active = False
-							guiActive = True
-							guiIcon = Review Data
-							guiName = Review Data
-							category = Review Data
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ResetExperiment
-						{
-							active = False
-							guiActive = True
-							guiIcon = Reset
-							guiName = Reset Materials Bay
-							category = Reset
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ResetExperimentExternal
-						{
-							active = False
-							guiActive = False
-							guiIcon = Reset
-							guiName = Reset Materials Bay
-							category = Reset
-							guiActiveUnfocused = True
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						DeployAction
-						{
-							actionGroup = Custom01, Custom02
-						}
-						ResetAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = solarPanels4
-				uid = 3863053592
-				mid = 4234490162
-				parent = 1
-				position = -0.445990324020386,-0.564359664916992,-0.445990234613419
-				rotation = -2.594837E-08,0.3826835,4.49439E-08,-0.9238796
-				mirror = 1,1,1
-				istg = 1
-				dstg = 1
-				sqor = -1
-				sidx = -1
-				attm = 1
-				srfN = srfAttach, 1
-				mass = 0.0175
-				temp = -0.07739431
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = solarPanels4
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleDeployableSolarPanel
-					isEnabled = True
-					currentRotation = (-0.6753511, -0.6753439, -0.2095393, 0.2095353)
-					stateString = BROKEN
-					storedAnimationTime = 0
-					storedAnimationSpeed = 0
-					EVENTS
-					{
-						Extend
-						{
-							active = False
-							guiActive = True
-							guiIcon = Extend Panels
-							guiName = Extend Panels
-							category = Extend Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						Retract
-						{
-							active = False
-							guiActive = True
-							guiIcon = Retract Panels
-							guiName = Retract Panels
-							category = Retract Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ExtendPanelsAction
-						{
-							actionGroup = Custom03
-						}
-						ExtendAction
-						{
-							actionGroup = None
-						}
-						RetractAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = solarPanels3
-				uid = 2183943370
-				mid = 4234490162
-				parent = 1
-				position = 0.609570145606995,-0.54585075378418,-0.163333743810654
-				rotation = 6.296359E-08,0.9914449,1.256074E-14,-0.1305262
-				mirror = 1,1,1
-				istg = 1
-				dstg = 1
-				sqor = -1
-				sidx = -1
-				attm = 1
-				srfN = srfAttach, 1
-				mass = 0.0175
-				temp = -0.07730225
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = solarPanels3
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleDeployableSolarPanel
-					isEnabled = True
-					currentRotation = (-0.6994469, 0.1035083, -0.1034592, 0.6995401)
-					stateString = EXTENDED
-					storedAnimationTime = 0
-					storedAnimationSpeed = 0
-					EVENTS
-					{
-						Extend
-						{
-							active = False
-							guiActive = True
-							guiIcon = Extend Panels
-							guiName = Extend Panels
-							category = Extend Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						Retract
-						{
-							active = True
-							guiActive = True
-							guiIcon = Retract Panels
-							guiName = Retract Panels
-							category = Retract Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ExtendPanelsAction
-						{
-							actionGroup = Custom03
-						}
-						ExtendAction
-						{
-							actionGroup = None
-						}
-						RetractAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = solarPanels5
-				uid = 2145919563
-				mid = 4234490162
-				parent = 1
-				position = -0.162330269813538,-0.626190185546875,0.605825960636139
-				rotation = 2.864896E-08,0.1305263,6.446611E-16,-0.9914449
-				mirror = 1,1,1
-				istg = 1
-				dstg = 1
-				sqor = -1
-				sidx = -1
-				attm = 1
-				srfN = srfAttach, 1
-				mass = 0.005
-				temp = -0.07721194
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = solarPanels5
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleDeployableSolarPanel
-					isEnabled = True
-					currentRotation = (0, 0, 0, 1)
-					stateString = EXTENDED
-					storedAnimationTime = 0
-					storedAnimationSpeed = 0
-					EVENTS
-					{
-						Extend
-						{
-							active = False
-							guiActive = True
-							guiIcon = Extend Panels
-							guiName = Extend Panels
-							category = Extend Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						Retract
-						{
-							active = False
-							guiActive = True
-							guiIcon = Retract Panels
-							guiName = Retract Panels
-							category = Retract Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ExtendPanelsAction
-						{
-							actionGroup = None
-						}
-						ExtendAction
-						{
-							actionGroup = None
-						}
-						RetractAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = GooExperiment
-				uid = 3105350526
-				mid = 4234490162
-				parent = 1
-				position = 0.122860789299011,-0.752269744873047,0.458522647619247
-				rotation = 1.45937E-15,0.9914449,2.996259E-08,-0.1305262
-				mirror = 1,1,1
-				istg = 1
-				dstg = 1
-				sqor = -1
-				sidx = -1
-				attm = 1
-				srfN = srfAttach, 1
-				mass = 0.15
-				temp = -0.07712184
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = GooExperiment
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleAnimateGeneric
-					isEnabled = True
-					status = Locked
-					animSwitch = False
-					animTime = 0
-					animSpeed = 1
-					EVENTS
-					{
-						Toggle
-						{
-							active = True
-							guiActive = False
-							guiIcon = Toggle
-							guiName = Deploy
-							category = Toggle
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleScienceExperiment
-					isEnabled = True
-					Deployed = False
-					EVENTS
-					{
-						DeployExperiment
-						{
-							active = True
-							guiActive = True
-							guiIcon = Deploy
-							guiName = Observe Mystery Goo
-							category = Deploy
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ReviewDataEvent
-						{
-							active = False
-							guiActive = True
-							guiIcon = Review Data
-							guiName = Review Data
-							category = Review Data
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ResetExperiment
-						{
-							active = False
-							guiActive = True
-							guiIcon = Reset
-							guiName = Reset Goo Canister
-							category = Reset
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ResetExperimentExternal
-						{
-							active = False
-							guiActive = False
-							guiIcon = Reset
-							guiName = Reset Goo Canister
-							category = Reset
-							guiActiveUnfocused = True
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						DeployAction
-						{
-							actionGroup = Custom01, Custom02
-						}
-						ResetAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = mediumDishAntenna
-				uid = 329425211
-				mid = 4234490162
-				parent = 1
-				position = -0.64290726184845,-0.849889755249023,-0.172266334295273
-				rotation = -0.4304593,0.5609856,-0.5609855,-0.4304594
-				mirror = 1,1,1
-				istg = 1
-				dstg = 1
-				sqor = -1
-				sidx = -1
-				attm = 1
-				srfN = srfAttach, 1
-				mass = 0.03
-				temp = -0.07703203
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = mediumDishAntenna
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleAnimateGeneric
-					isEnabled = True
-					status = Locked
-					animSwitch = True
-					animTime = 0.992398
-					animSpeed = 1
-					EVENTS
-					{
-						Toggle
-						{
-							active = True
-							guiActive = False
-							guiIcon = Toggle
-							guiName = Retract
-							category = Toggle
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleAnimateGeneric
-					isEnabled = True
-					status = Moving...
-					animSwitch = False
-					animTime = 0.9362178
-					animSpeed = 1
-					EVENTS
-					{
-						Toggle
-						{
-							active = False
-							guiActive = False
-							guiIcon = Toggle
-							guiName = Blink Lights
-							category = Toggle
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-							active = False
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleDataTransmitter
-					isEnabled = True
-					EVENTS
-					{
-						StartTransmission
-						{
-							active = False
-							guiActive = True
-							guiIcon = Transmit Data
-							guiName = Transmit Data
-							category = Transmit Data
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						StopTransmission
-						{
-							active = True
-							guiActive = True
-							guiIcon = Stop Transmitting
-							guiName = Stop Transmitting
-							category = Stop Transmitting
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = sensorThermometer
-				uid = 2088744657
-				mid = 4234490162
-				parent = 1
-				position = 0.30999481678009,-0.527990341186523,-0.536926686763763
-				rotation = 0,0.2588191,0,-0.9659258
-				mirror = 1,1,1
-				istg = 1
-				dstg = 1
-				sqor = -1
-				sidx = -1
-				attm = 1
-				srfN = srfAttach, 1
-				mass = 0.005
-				temp = -0.07694221
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = sensorThermometer
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleEnviroSensor
-					isEnabled = True
-					sensorActive = False
-					EVENTS
-					{
-						Toggle
-						{
-							active = True
-							guiActive = True
-							guiIcon = Toggle Display
-							guiName = Toggle Display
-							category = Toggle Display
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleScienceExperiment
-					isEnabled = True
-					Deployed = False
-					EVENTS
-					{
-						DeployExperiment
-						{
-							active = True
-							guiActive = True
-							guiIcon = Deploy
-							guiName = Log Temperature
-							category = Deploy
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ReviewDataEvent
-						{
-							active = False
-							guiActive = True
-							guiIcon = Review Data
-							guiName = Review Data
-							category = Review Data
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ResetExperiment
-						{
-							active = False
-							guiActive = True
-							guiIcon = Reset
-							guiName = Delete Data
-							category = Reset
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ResetExperimentExternal
-						{
-							active = False
-							guiActive = False
-							guiIcon = Reset
-							guiName = Delete Data
-							category = Reset
-							guiActiveUnfocused = True
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						DeployAction
-						{
-							actionGroup = Custom01
-						}
-						ResetAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = sensorBarometer
-				uid = 3317387902
-				mid = 4234490162
-				parent = 1
-				position = 0.309559345245361,-0.960050582885742,-0.536172389984131
-				rotation = 0,0.2588191,0,-0.9659258
-				mirror = 1,1,1
-				istg = 1
-				dstg = 1
-				sqor = -1
-				sidx = -1
-				attm = 1
-				srfN = srfAttach, 1
-				mass = 0.005
-				temp = -0.0768503
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = sensorBarometer
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleEnviroSensor
-					isEnabled = True
-					sensorActive = False
-					EVENTS
-					{
-						Toggle
-						{
-							active = True
-							guiActive = True
-							guiIcon = Toggle Display
-							guiName = Toggle Display
-							category = Toggle Display
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleScienceExperiment
-					isEnabled = True
-					Deployed = False
-					EVENTS
-					{
-						DeployExperiment
-						{
-							active = True
-							guiActive = True
-							guiIcon = Deploy
-							guiName = Log Pressure Data
-							category = Deploy
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ReviewDataEvent
-						{
-							active = False
-							guiActive = True
-							guiIcon = Review Data
-							guiName = Review Data
-							category = Review Data
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ResetExperiment
-						{
-							active = False
-							guiActive = True
-							guiIcon = Reset
-							guiName = Delete Data
-							category = Reset
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ResetExperimentExternal
-						{
-							active = False
-							guiActive = False
-							guiIcon = Reset
-							guiName = Delete Data
-							category = Reset
-							guiActiveUnfocused = True
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						DeployAction
-						{
-							actionGroup = Custom01
-						}
-						ResetAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = ksp.r.largeBatteryPack
-				uid = 3841493729
-				mid = 4234490162
-				parent = 1
-				position = -5.96046447753906E-08,-0.721410751342773,-0.622022449970245
-				rotation = 0,-4.371139E-08,0,-1
-				mirror = 1,1,1
-				istg = 1
-				dstg = 1
-				sqor = -1
-				sidx = -1
-				attm = 1
-				srfN = srfAttach, 1
-				mass = 0.02
-				temp = -0.07676011
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = ksp.r.largeBatteryPack
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				RESOURCE
-				{
-					name = ElectricCharge
-					amount = 329.276478976011
-					maxAmount = 400
-					flowState = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = parachuteRadial
-				uid = 2686624446
-				mid = 4234490162
-				parent = 1
-				position = 0.537491083145142,-0.793659210205078,0.310320675373077
-				rotation = 0,0.8660254,0,-0.5
-				mirror = 1,1,1
-				istg = 0
-				dstg = 0
-				sqor = 0
-				sidx = 1
-				attm = 1
-				srfN = srfAttach, 1
-				mass = 0.15
-				temp = -0.07667018
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = parachuteRadial
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleParachute
-					isEnabled = True
-					persistentState = STOWED
-					staged = False
-					EVENTS
-					{
-						Deploy
-						{
-							active = True
-							guiActive = True
-							guiIcon = Deploy Chute
-							guiName = Deploy Chute
-							category = Deploy Chute
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						CutParachute
-						{
-							active = False
-							guiActive = True
-							guiIcon = Cut Parachute
-							guiName = Cut Parachute
-							category = Cut Parachute
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						Repack
-						{
-							active = False
-							guiActive = False
-							guiIcon = Repack Chute
-							guiName = Repack Chute
-							category = Repack Chute
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						DeployAction
-						{
-							actionGroup = None
-						}
-						CutAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = parachuteRadial
-				uid = 2284349327
-				mid = 4234490162
-				parent = 1
-				position = -0.536295294761658,-0.773359298706055,0.309630155563354
-				rotation = 0,-0.8660254,0,-0.5000001
-				mirror = 1,1,1
-				istg = 0
-				dstg = 0
-				sqor = 0
-				sidx = 2
-				attm = 1
-				srfN = srfAttach, 1
-				mass = 0.15
-				temp = -0.07658297
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = parachuteRadial
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleParachute
-					isEnabled = True
-					persistentState = STOWED
-					staged = False
-					EVENTS
-					{
-						Deploy
-						{
-							active = True
-							guiActive = True
-							guiIcon = Deploy Chute
-							guiName = Deploy Chute
-							category = Deploy Chute
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						CutParachute
-						{
-							active = False
-							guiActive = True
-							guiIcon = Cut Parachute
-							guiName = Cut Parachute
-							category = Cut Parachute
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						Repack
-						{
-							active = False
-							guiActive = False
-							guiIcon = Repack Chute
-							guiName = Repack Chute
-							category = Repack Chute
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						DeployAction
-						{
-							actionGroup = None
-						}
-						CutAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = stackDecoupler
-				uid = 276577173
-				mid = 4234490162
-				parent = 1
-				position = 0,-1.41130065917969,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				istg = 1
-				dstg = 2
-				sqor = 1
-				sidx = 0
 				attm = 0
 				srfN = None, -1
-				attN = bottom, 13
-				attN = top, 1
-				mass = 0.05
-				temp = -0.07688549
+				attN = top, 0
+				attN = bottom, 2
+				mass = 0.01
+				temp = -40.31894
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
-				rTrf = stackDecoupler
+				rTrf = batteryBankMini
 				EVENTS
 				{
 				}
 				ACTIONS
 				{
 				}
-				MODULE
+				RESOURCE
 				{
-					name = ModuleDecouple
-					isEnabled = True
-					isDecoupled = False
-					EVENTS
-					{
-						Decouple
-						{
-							active = True
-							guiActive = True
-							guiIcon = Decouple
-							guiName = Decouple
-							category = Decouple
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						DecoupleAction
-						{
-							actionGroup = None
-						}
-					}
+					name = ElectricCharge
+					amount = 168.655578097228
+					maxAmount = 200
+					flowState = True
+					flowMode = Both
 				}
 			}
 			PART
 			{
 				name = largeAdapter2
-				uid = 111212545
-				mid = 4234490162
-				parent = 12
-				position = 0,-1.7335090637207,0
+				uid = 4062048965
+				mid = 38231759
+				parent = 1
+				position = 0,-0.727548599243164,0
 				rotation = 0,0,-1,0
 				mirror = 1,1,1
-				istg = 3
-				dstg = 3
+				istg = 0
+				dstg = 0
 				sqor = -1
 				sidx = -1
 				attm = 0
 				srfN = None, -1
-				attN = top, 14
-				attN = bottom, 12
+				attN = top, 3
+				attN = bottom, 1
 				mass = 0.08
-				temp = -0.07729768
+				temp = -40.31981
 				expt = 0.5
 				state = 1
 				connected = True
@@ -12265,29 +11331,207 @@ GAME
 			}
 			PART
 			{
-				name = fuelTank2-2
-				uid = 4232730207
-				mid = 4234490162
-				parent = 13
-				position = 0,-2.8602294921875,0
+				name = RCSTank1-2
+				uid = 1071045766
+				mid = 38231759
+				parent = 2
+				position = 0,-1.41676902770996,0
 				rotation = 0,0,0,1
 				mirror = 1,1,1
-				istg = 3
-				dstg = 3
+				istg = 0
+				dstg = 0
 				sqor = -1
 				sidx = -1
 				attm = 0
 				srfN = None, -1
-				attN = top, 13
-				attN = None, -1
-				mass = 1
-				temp = -0.07799589
+				attN = top, 2
+				attN = bottom, 6
+				mass = 0.4
+				temp = -40.36027
 				expt = 0.5
 				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
-				rTrf = fuelTank2-2
+				rTrf = RCSTank1-2
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				RESOURCE
+				{
+					name = MonoPropellant
+					amount = 728.86910880762
+					maxAmount = 750
+					flowState = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = RCSBlock
+				uid = 3269250160
+				mid = 38231759
+				parent = 3
+				position = 0.918573141098022,-1.39476013183594,-0.919623196125031
+				rotation = 7.809729E-08,0.9238796,-4.508933E-08,-0.3826835
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 5
+				srfN = srfAttach, 3
+				mass = 0.05
+				temp = -40.22823
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = RCSBlock
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleRCS
+					isEnabled = True
+					isEnabled = True
+					EVENTS
+					{
+						Disable
+						{
+							active = True
+							guiActive = True
+							guiIcon = Disable RCS Port
+							guiName = Disable RCS Port
+							category = Disable RCS Port
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Enable
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable RCS Port
+							guiName = Enable RCS Port
+							category = Enable RCS Port
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = RCSBlock
+				uid = 2600396056
+				mid = 38231759
+				parent = 3
+				position = -0.918573498725891,-1.39476013183594,0.919623255729675
+				rotation = -4.508934E-08,-0.3826835,-7.809729E-08,-0.9238796
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 4
+				srfN = srfAttach, 3
+				mass = 0.05
+				temp = -40.18456
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = RCSBlock
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleRCS
+					isEnabled = True
+					isEnabled = True
+					EVENTS
+					{
+						Disable
+						{
+							active = True
+							guiActive = True
+							guiIcon = Disable RCS Port
+							guiName = Disable RCS Port
+							category = Disable RCS Port
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Enable
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable RCS Port
+							guiName = Enable RCS Port
+							category = Enable RCS Port
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = fuelTank3-2
+				uid = 3059619278
+				mid = 38231759
+				parent = 3
+				position = 0,-5.66676902770996,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 3
+				attN = None, -1
+				mass = 4
+				temp = -40.62462
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = fuelTank3-2
 				EVENTS
 				{
 				}
@@ -12297,1447 +11541,445 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 642.387451171875
-					maxAmount = 720
+					amount = 2880
+					maxAmount = 2880
 					flowState = True
 					flowMode = Both
 				}
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 785.140197753906
-					maxAmount = 880
+					amount = 3520
+					maxAmount = 3520
 					flowState = True
 					flowMode = Both
 				}
 			}
 			PART
 			{
-				name = radialLiquidEngine1-2
-				uid = 1645520610
-				mid = 4234490162
-				parent = 14
-				position = -1.78813934326172E-07,-3.60812950134277,-1.79318785667419
-				rotation = 0,1,0,-4.371139E-08
-				mirror = 1,1,1
-				istg = 2
-				dstg = 3
-				sqor = 2
-				sidx = 0
-				attm = 1
-				sym = 17
-				sym = 19
-				sym = 21
-				srfN = srfAttach, 14
-				mass = 0.9
-				temp = -0.07734564
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = radialLiquidEngine1-2
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleEngines
-					isEnabled = True
-					EngineIgnited = True
-					engineShutdown = False
-					currentThrottle = 0
-					flameout = False
-					staged = True
-					EVENTS
-					{
-						Activate
-						{
-							active = False
-							guiActive = True
-							guiIcon = Activate Engine
-							guiName = Activate Engine
-							category = Activate Engine
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Shutdown
-						{
-							active = True
-							guiActive = True
-							guiIcon = Shutdown Engine
-							guiName = Shutdown Engine
-							category = Shutdown Engine
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						OnAction
-						{
-							actionGroup = None
-						}
-						ShutdownAction
-						{
-							actionGroup = None
-						}
-						ActivateAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleGimbal
-					isEnabled = True
-					gimbalLock = False
-					EVENTS
-					{
-						LockGimbal
-						{
-							active = True
-							guiActive = True
-							guiIcon = Lock Gimbal
-							guiName = Lock Gimbal
-							category = Lock Gimbal
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						FreeGimbal
-						{
-							active = False
-							guiActive = True
-							guiIcon = Free Gimbal
-							guiName = Free Gimbal
-							category = Free Gimbal
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = landingLeg1
-				uid = 2954652048
-				mid = 4234490162
-				parent = 15
-				position = -5.96046447753906E-08,-3.18633079528809,-2.3501238822937
-				rotation = 0,0.7071066,0,-0.7071069
-				mirror = 1,1,1
-				istg = 3
-				dstg = 3
-				sqor = -1
-				sidx = -1
-				attm = 1
-				sym = 18
-				sym = 20
-				sym = 22
-				srfN = srfAttach, 15
-				mass = 0.05
-				temp = -0.0770248
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = landingLeg1
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleLandingLeg
-					isEnabled = True
-					savedAnimationTime = 1
-					savedAnimationSpeed = 0
-					savedLegState = 3
-					savedLocalPosition = (-0.0001159855, -0.1200522, -0.7108372)
-					EVENTS
-					{
-						LowerLeg
-						{
-							active = False
-							guiActive = True
-							guiIcon = Lower Legs
-							guiName = Lower Legs
-							category = Lower Legs
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						RaiseLeg
-						{
-							active = True
-							guiActive = True
-							guiIcon = Raise Legs
-							guiName = Raise Legs
-							category = Raise Legs
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						RepairLeg
-						{
-							active = False
-							guiActive = False
-							guiIcon = Repair Leg
-							guiName = Repair Leg
-							category = Repair Leg
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						OnAction
-						{
-							actionGroup = Gear
-						}
-						RaiseAction
-						{
-							actionGroup = None
-						}
-						LowerAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = radialLiquidEngine1-2
-				uid = 2704427605
-				mid = 4234490162
-				parent = 14
-				position = -1.79318726062775,-3.60812950134277,6.70552253723145E-08
-				rotation = 0,0.7071067,0,-0.7071068
-				mirror = 1,1,1
-				istg = 2
-				dstg = 3
-				sqor = 2
-				sidx = 1
-				attm = 1
-				sym = 15
-				sym = 19
-				sym = 21
-				srfN = srfAttach, 14
-				mass = 0.9
-				temp = -0.07728834
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = radialLiquidEngine1-2
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleEngines
-					isEnabled = True
-					EngineIgnited = True
-					engineShutdown = False
-					currentThrottle = 0
-					flameout = False
-					staged = True
-					EVENTS
-					{
-						Activate
-						{
-							active = False
-							guiActive = True
-							guiIcon = Activate Engine
-							guiName = Activate Engine
-							category = Activate Engine
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Shutdown
-						{
-							active = True
-							guiActive = True
-							guiIcon = Shutdown Engine
-							guiName = Shutdown Engine
-							category = Shutdown Engine
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						OnAction
-						{
-							actionGroup = None
-						}
-						ShutdownAction
-						{
-							actionGroup = None
-						}
-						ActivateAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleGimbal
-					isEnabled = True
-					gimbalLock = False
-					EVENTS
-					{
-						LockGimbal
-						{
-							active = True
-							guiActive = True
-							guiIcon = Lock Gimbal
-							guiName = Lock Gimbal
-							category = Lock Gimbal
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						FreeGimbal
-						{
-							active = False
-							guiActive = True
-							guiIcon = Free Gimbal
-							guiName = Free Gimbal
-							category = Free Gimbal
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = landingLeg1
-				uid = 2917431348
-				mid = 4234490162
-				parent = 17
-				position = -2.35012340545654,-3.18633079528809,4.84287738800049E-08
-				rotation = 0,-1.490116E-07,0,-0.9999999
-				mirror = 1,1,1
-				istg = 3
-				dstg = 3
-				sqor = -1
-				sidx = -1
-				attm = 1
-				sym = 16
-				sym = 20
-				sym = 22
-				srfN = srfAttach, 17
-				mass = 0.05
-				temp = -0.07699644
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = landingLeg1
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleLandingLeg
-					isEnabled = True
-					savedAnimationTime = 1
-					savedAnimationSpeed = 0
-					savedLegState = 3
-					savedLocalPosition = (-0.0001491376, -0.1199282, -0.7110162)
-					EVENTS
-					{
-						LowerLeg
-						{
-							active = False
-							guiActive = True
-							guiIcon = Lower Legs
-							guiName = Lower Legs
-							category = Lower Legs
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						RaiseLeg
-						{
-							active = True
-							guiActive = True
-							guiIcon = Raise Legs
-							guiName = Raise Legs
-							category = Raise Legs
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						RepairLeg
-						{
-							active = False
-							guiActive = False
-							guiIcon = Repair Leg
-							guiName = Repair Leg
-							category = Repair Leg
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						OnAction
-						{
-							actionGroup = Gear
-						}
-						RaiseAction
-						{
-							actionGroup = None
-						}
-						LowerAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = radialLiquidEngine1-2
-				uid = 2788247549
-				mid = 4234490162
-				parent = 14
-				position = 2.98023223876953E-07,-3.60812950134277,1.79318821430206
-				rotation = 0,-8.742278E-08,0,-1
-				mirror = 1,1,1
-				istg = 2
-				dstg = 3
-				sqor = 2
-				sidx = 2
-				attm = 1
-				sym = 15
-				sym = 17
-				sym = 21
-				srfN = srfAttach, 14
-				mass = 0.9
-				temp = -0.07723156
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = radialLiquidEngine1-2
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleEngines
-					isEnabled = True
-					EngineIgnited = True
-					engineShutdown = False
-					currentThrottle = 0
-					flameout = False
-					staged = True
-					EVENTS
-					{
-						Activate
-						{
-							active = False
-							guiActive = True
-							guiIcon = Activate Engine
-							guiName = Activate Engine
-							category = Activate Engine
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Shutdown
-						{
-							active = True
-							guiActive = True
-							guiIcon = Shutdown Engine
-							guiName = Shutdown Engine
-							category = Shutdown Engine
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						OnAction
-						{
-							actionGroup = None
-						}
-						ShutdownAction
-						{
-							actionGroup = None
-						}
-						ActivateAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleGimbal
-					isEnabled = True
-					gimbalLock = False
-					EVENTS
-					{
-						LockGimbal
-						{
-							active = True
-							guiActive = True
-							guiIcon = Lock Gimbal
-							guiName = Lock Gimbal
-							category = Lock Gimbal
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						FreeGimbal
-						{
-							active = False
-							guiActive = True
-							guiIcon = Free Gimbal
-							guiName = Free Gimbal
-							category = Free Gimbal
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = landingLeg1
-				uid = 1130116096
-				mid = 4234490162
-				parent = 19
-				position = 2.98023223876953E-07,-3.18633079528809,2.35012412071228
-				rotation = 0,-0.7071069,0,-0.7071066
-				mirror = 1,1,1
-				istg = 3
-				dstg = 3
-				sqor = -1
-				sidx = -1
-				attm = 1
-				sym = 16
-				sym = 18
-				sym = 22
-				srfN = srfAttach, 19
-				mass = 0.05
-				temp = -0.07696708
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = landingLeg1
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleLandingLeg
-					isEnabled = True
-					savedAnimationTime = 1
-					savedAnimationSpeed = 0
-					savedLegState = 3
-					savedLocalPosition = (9.472887E-05, -0.1198942, -0.7112106)
-					EVENTS
-					{
-						LowerLeg
-						{
-							active = False
-							guiActive = True
-							guiIcon = Lower Legs
-							guiName = Lower Legs
-							category = Lower Legs
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						RaiseLeg
-						{
-							active = True
-							guiActive = True
-							guiIcon = Raise Legs
-							guiName = Raise Legs
-							category = Raise Legs
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						RepairLeg
-						{
-							active = False
-							guiActive = False
-							guiIcon = Repair Leg
-							guiName = Repair Leg
-							category = Repair Leg
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						OnAction
-						{
-							actionGroup = Gear
-						}
-						RaiseAction
-						{
-							actionGroup = None
-						}
-						LowerAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = radialLiquidEngine1-2
-				uid = 3343065122
-				mid = 4234490162
-				parent = 14
-				position = 1.79318785667419,-3.60812950134277,-2.90572643280029E-07
-				rotation = 0,-0.7071068,0,-0.7071067
-				mirror = 1,1,1
-				istg = 2
-				dstg = 3
-				sqor = 2
-				sidx = 3
-				attm = 1
-				sym = 15
-				sym = 17
-				sym = 19
-				srfN = srfAttach, 14
-				mass = 0.9
-				temp = -0.07717324
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = radialLiquidEngine1-2
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleEngines
-					isEnabled = True
-					EngineIgnited = True
-					engineShutdown = False
-					currentThrottle = 0
-					flameout = False
-					staged = True
-					EVENTS
-					{
-						Activate
-						{
-							active = False
-							guiActive = True
-							guiIcon = Activate Engine
-							guiName = Activate Engine
-							category = Activate Engine
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Shutdown
-						{
-							active = True
-							guiActive = True
-							guiIcon = Shutdown Engine
-							guiName = Shutdown Engine
-							category = Shutdown Engine
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						OnAction
-						{
-							actionGroup = None
-						}
-						ShutdownAction
-						{
-							actionGroup = None
-						}
-						ActivateAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleGimbal
-					isEnabled = True
-					gimbalLock = False
-					EVENTS
-					{
-						LockGimbal
-						{
-							active = True
-							guiActive = True
-							guiIcon = Lock Gimbal
-							guiName = Lock Gimbal
-							category = Lock Gimbal
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						FreeGimbal
-						{
-							active = False
-							guiActive = True
-							guiIcon = Free Gimbal
-							guiName = Free Gimbal
-							category = Free Gimbal
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = landingLeg1
-				uid = 4102547625
-				mid = 4234490162
-				parent = 21
-				position = 2.3501238822937,-3.18633079528809,-2.30967998504639E-07
-				rotation = 0,-0.9999999,0,1.490116E-07
-				mirror = 1,1,1
-				istg = 3
-				dstg = 3
-				sqor = -1
-				sidx = -1
-				attm = 1
-				sym = 16
-				sym = 18
-				sym = 20
-				srfN = srfAttach, 21
-				mass = 0.05
-				temp = -0.07693912
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = landingLeg1
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleLandingLeg
-					isEnabled = True
-					savedAnimationTime = 1
-					savedAnimationSpeed = 0
-					savedLegState = 3
-					savedLocalPosition = (6.982605E-05, -0.1200726, -0.7110276)
-					EVENTS
-					{
-						LowerLeg
-						{
-							active = False
-							guiActive = True
-							guiIcon = Lower Legs
-							guiName = Lower Legs
-							category = Lower Legs
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						RaiseLeg
-						{
-							active = True
-							guiActive = True
-							guiIcon = Raise Legs
-							guiName = Raise Legs
-							category = Raise Legs
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						RepairLeg
-						{
-							active = False
-							guiActive = False
-							guiIcon = Repair Leg
-							guiName = Repair Leg
-							category = Repair Leg
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						OnAction
-						{
-							actionGroup = Gear
-						}
-						RaiseAction
-						{
-							actionGroup = None
-						}
-						LowerAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = spotLight2
-				uid = 1481372674
-				mid = 4234490162
-				parent = 14
-				position = 0.739078938961029,-2.95549011230469,-1.28012180328369
-				rotation = 0,0.2588191,0,-0.9659258
-				mirror = 1,1,1
-				istg = 3
-				dstg = 3
-				sqor = -1
-				sidx = -1
-				attm = 1
-				sym = 24
-				sym = 25
-				sym = 26
-				srfN = srfAttach, 14
-				mass = 0.015
-				temp = -0.07703099
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = spotLight2
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleLight
-					isEnabled = True
-					isOn = False
-					EVENTS
-					{
-						LightsOff
-						{
-							active = False
-							guiActive = True
-							guiIcon = Lights Off
-							guiName = Lights Off
-							category = Lights Off
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						LightsOn
-						{
-							active = True
-							guiActive = True
-							guiIcon = Lights On
-							guiName = Lights On
-							category = Lights On
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleLightAction
-						{
-							actionGroup = Light
-						}
-						LightOnAction
-						{
-							actionGroup = None
-						}
-						LightOffAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = spotLight2
-				uid = 2960831381
-				mid = 4234490162
-				parent = 14
-				position = -1.28012239933014,-2.95549011230469,-0.739078938961029
-				rotation = 0,-0.5,0,-0.8660254
-				mirror = 1,1,1
-				istg = 3
-				dstg = 3
-				sqor = -1
-				sidx = -1
-				attm = 1
-				sym = 23
-				sym = 25
-				sym = 26
-				srfN = srfAttach, 14
-				mass = 0.015
-				temp = -0.0769515
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = spotLight2
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleLight
-					isEnabled = True
-					isOn = False
-					EVENTS
-					{
-						LightsOff
-						{
-							active = False
-							guiActive = True
-							guiIcon = Lights Off
-							guiName = Lights Off
-							category = Lights Off
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						LightsOn
-						{
-							active = True
-							guiActive = True
-							guiIcon = Lights On
-							guiName = Lights On
-							category = Lights On
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleLightAction
-						{
-							actionGroup = Light
-						}
-						LightOnAction
-						{
-							actionGroup = None
-						}
-						LightOffAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = spotLight2
-				uid = 4123112013
-				mid = 4234490162
-				parent = 14
-				position = -0.739078283309937,-2.95549011230469,1.28012216091156
-				rotation = 0,-0.9659259,0,-0.2588191
-				mirror = 1,1,1
-				istg = 3
-				dstg = 3
-				sqor = -1
-				sidx = -1
-				attm = 1
-				sym = 23
-				sym = 24
-				sym = 26
-				srfN = srfAttach, 14
-				mass = 0.015
-				temp = -0.07687099
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = spotLight2
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleLight
-					isEnabled = True
-					isOn = False
-					EVENTS
-					{
-						LightsOff
-						{
-							active = False
-							guiActive = True
-							guiIcon = Lights Off
-							guiName = Lights Off
-							category = Lights Off
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						LightsOn
-						{
-							active = True
-							guiActive = True
-							guiIcon = Lights On
-							guiName = Lights On
-							category = Lights On
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleLightAction
-						{
-							actionGroup = Light
-						}
-						LightOnAction
-						{
-							actionGroup = None
-						}
-						LightOffAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = spotLight2
-				uid = 2075442004
-				mid = 4234490162
-				parent = 14
-				position = 1.28012192249298,-2.95549011230469,0.739078760147095
-				rotation = 0,-0.8660254,0,0.5
-				mirror = 1,1,1
-				istg = 3
-				dstg = 3
-				sqor = -1
-				sidx = -1
-				attm = 1
-				sym = 23
-				sym = 24
-				sym = 25
-				srfN = srfAttach, 14
-				mass = 0.015
-				temp = -0.07679046
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = spotLight2
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = ModuleLight
-					isEnabled = True
-					isOn = False
-					EVENTS
-					{
-						LightsOff
-						{
-							active = False
-							guiActive = True
-							guiIcon = Lights Off
-							guiName = Lights Off
-							category = Lights Off
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						LightsOn
-						{
-							active = True
-							guiActive = True
-							guiIcon = Lights On
-							guiName = Lights On
-							category = Lights On
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleLightAction
-						{
-							actionGroup = Light
-						}
-						LightOnAction
-						{
-							actionGroup = None
-						}
-						LightOffAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = radialRCSTank
-				uid = 2217261221
-				mid = 4234490162
-				parent = 14
-				position = -0.716767311096191,-2.84988975524902,-1.2414778470993
-				rotation = 0,-0.2588191,0,-0.9659259
-				mirror = 1,1,1
-				istg = 3
-				dstg = 3
-				sqor = -1
-				sidx = -1
-				attm = 1
-				sym = 28
-				sym = 29
-				sym = 30
-				srfN = srfAttach, 14
-				mass = 0.075
-				temp = -0.07670945
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = radialRCSTank
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				RESOURCE
-				{
-					name = MonoPropellant
-					amount = 35.1757774353027
-					maxAmount = 40
-					flowState = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = radialRCSTank
-				uid = 3979297417
-				mid = 4234490162
-				parent = 14
-				position = -1.24147737026215,-2.84988975524902,0.716767430305481
-				rotation = 0,-0.8660254,0,-0.5
-				mirror = 1,1,1
-				istg = 3
-				dstg = 3
-				sqor = -1
-				sidx = -1
-				attm = 1
-				sym = 27
-				sym = 29
-				sym = 30
-				srfN = srfAttach, 14
-				mass = 0.075
-				temp = -0.07662864
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = radialRCSTank
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				RESOURCE
-				{
-					name = MonoPropellant
-					amount = 35.1757774353027
-					maxAmount = 40
-					flowState = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = radialRCSTank
-				uid = 2425134149
-				mid = 4234490162
-				parent = 14
-				position = 0.716767609119415,-2.84988975524902,1.24147725105286
-				rotation = 0,-0.9659259,0,0.2588191
-				mirror = 1,1,1
-				istg = 3
-				dstg = 3
-				sqor = -1
-				sidx = -1
-				attm = 1
-				sym = 27
-				sym = 28
-				sym = 30
-				srfN = srfAttach, 14
-				mass = 0.075
-				temp = -0.0765489
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = radialRCSTank
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				RESOURCE
-				{
-					name = MonoPropellant
-					amount = 35.1757774353027
-					maxAmount = 40
-					flowState = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = radialRCSTank
-				uid = 1395925451
-				mid = 4234490162
-				parent = 14
-				position = 1.24147760868073,-2.84988975524902,-0.716767549514771
-				rotation = 0,-0.5,0,0.8660254
-				mirror = 1,1,1
-				istg = 3
-				dstg = 3
-				sqor = -1
-				sidx = -1
-				attm = 1
-				sym = 27
-				sym = 28
-				sym = 29
-				srfN = srfAttach, 14
-				mass = 0.075
-				temp = -0.07646838
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = radialRCSTank
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				RESOURCE
-				{
-					name = MonoPropellant
-					amount = 35.1757774353027
-					maxAmount = 40
-					flowState = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = RCSBlock
-				uid = 308188593
-				mid = 4234490162
-				parent = 0
-				position = 0.439228504896164,-0.0808506011962891,-0.439884126186371
-				rotation = -0.07068884,0.9223422,0.02552219,-0.3789942
+				name = strutConnector
+				uid = 83216499
+				mid = 38231759
+				parent = 6
+				position = -1.04928386211395,-8.89451885223389,-0.605804145336151
+				rotation = -5.454203E-09,0.258819,9.446956E-09,-0.9659259
 				mirror = 1,1,1
 				istg = 0
 				dstg = 0
 				sqor = -1
 				sidx = -1
 				attm = 1
-				srfN = srfAttach, 0
+				cData = tgt: fuelTank3-2_6; pos: 0.004445515,-0.1637237,-0.01219311; dir: 0.02559672,-0.9966875,-0.07719349
+				sym = 8
+				sym = 9
+				sym = 10
+				srfN = srfAttach, 6
 				mass = 0.05
-				temp = -0.07710016
-				expt = 0.5
-				state = 0
+				temp = -40.31954
+				expt = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
-				rTrf = RCSBlock
+				rTrf = strutConnector
 				EVENTS
 				{
 				}
 				ACTIONS
 				{
 				}
-				MODULE
-				{
-					name = ModuleRCS
-					isEnabled = True
-					isEnabled = True
-					EVENTS
-					{
-						Disable
-						{
-							active = True
-							guiActive = True
-							guiIcon = Disable RCS Port
-							guiName = Disable RCS Port
-							category = Disable RCS Port
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Enable
-						{
-							active = False
-							guiActive = True
-							guiIcon = Enable RCS Port
-							guiName = Enable RCS Port
-							category = Enable RCS Port
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
 			}
 			PART
 			{
-				name = RCSBlock
-				uid = 120679659
-				mid = 4234490162
-				parent = 0
-				position = -0.42801833152771,0.00250053405761719,-0.426574349403381
-				rotation = 0.02552209,-0.3789943,-0.07068857,0.9223422
+				name = strutConnector
+				uid = 1530945415
+				mid = 38231759
+				parent = 6
+				position = -0.605804204940796,-8.89451885223389,1.04928314685822
+				rotation = 2.823303E-09,-0.5000001,1.053671E-08,-0.8660254
 				mirror = 1,1,1
 				istg = 0
 				dstg = 0
 				sqor = -1
 				sidx = -1
 				attm = 1
-				srfN = srfAttach, 0
+				cData = tgt: fuelTank3-2_6; pos: 0.00409281,-0.163492,-0.01203985; dir: 0.02559672,-0.9966875,-0.07719349
+				sym = 7
+				sym = 9
+				sym = 10
+				srfN = srfAttach, 6
 				mass = 0.05
-				temp = -0.07700735
-				expt = 0.5
-				state = 0
+				temp = -40.30204
+				expt = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
-				rTrf = RCSBlock
+				rTrf = strutConnector
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+			}
+			PART
+			{
+				name = strutConnector
+				uid = 2579611365
+				mid = 38231759
+				parent = 6
+				position = 1.04928410053253,-8.89451885223389,0.605804145336151
+				rotation = 9.446956E-09,-0.9659259,5.454202E-09,-0.258819
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				cData = tgt: fuelTank3-2_6; pos: 0.003951062,-0.163522,-0.01240315; dir: 0.02559672,-0.9966875,-0.07719349
+				sym = 7
+				sym = 8
+				sym = 10
+				srfN = srfAttach, 6
+				mass = 0.05
+				temp = -40.28461
+				expt = 0
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = strutConnector
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+			}
+			PART
+			{
+				name = strutConnector
+				uid = 1996926753
+				mid = 38231759
+				parent = 6
+				position = 0.605804085731506,-8.89451885223389,-1.04928374290466
+				rotation = 1.053671E-08,-0.8660254,-2.823303E-09,0.5000001
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				cData = tgt: fuelTank3-2_6; pos: 0.004306169,-0.1636865,-0.01255031; dir: 0.02559672,-0.9966875,-0.07719349
+				sym = 7
+				sym = 8
+				sym = 9
+				srfN = srfAttach, 6
+				mass = 0.05
+				temp = -40.26704
+				expt = 0
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = strutConnector
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+			}
+			PART
+			{
+				name = strutConnector
+				uid = 4287031296
+				mid = 38231759
+				parent = 6
+				position = 0.876819133758545,-8.39231967926025,0.876818835735321
+				rotation = -7.8097E-08,0.9238796,-4.508926E-08,0.3826834
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 12
+				sym = 13
+				sym = 14
+				srfN = srfAttach, 6
+				mass = 0.05
+				temp = -40.25355
+				expt = 0
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = strutConnector
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+			}
+			PART
+			{
+				name = strutConnector
+				uid = 2574024904
+				mid = 38231759
+				parent = 6
+				position = 0.876819133758545,-8.39231967926025,-0.876818895339966
+				rotation = -8.710583E-08,0.9238796,2.333999E-08,-0.3826835
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 11
+				sym = 13
+				sym = 14
+				srfN = srfAttach, 6
+				mass = 0.05
+				temp = -40.2292
+				expt = 0
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = strutConnector
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+			}
+			PART
+			{
+				name = strutConnector
+				uid = 2189659626
+				mid = 38231759
+				parent = 6
+				position = -0.876819014549255,-8.39231967926025,-0.876818776130676
+				rotation = -4.508925E-08,0.3826834,7.8097E-08,-0.9238796
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 11
+				sym = 12
+				sym = 14
+				srfN = srfAttach, 6
+				mass = 0.05
+				temp = -40.20496
+				expt = 0
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = strutConnector
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+			}
+			PART
+			{
+				name = strutConnector
+				uid = 4050285329
+				mid = 38231759
+				parent = 6
+				position = -0.876818656921387,-8.39231967926025,0.876819014549255
+				rotation = 2.333999E-08,-0.3826835,8.710583E-08,-0.9238796
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 11
+				sym = 12
+				sym = 13
+				srfN = srfAttach, 6
+				mass = 0.05
+				temp = -40.18074
+				expt = 0
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = strutConnector
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+			}
+			PART
+			{
+				name = strutConnector
+				uid = 1713634982
+				mid = 38231759
+				parent = 6
+				position = 1.04674208164215,-8.73619937896729,-0.604336857795715
+				rotation = -9.446906E-09,0.9659259,5.454176E-09,-0.2588191
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 16
+				sym = 17
+				sym = 18
+				srfN = srfAttach, 6
+				mass = 0.05
+				temp = -40.16166
+				expt = 0
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = strutConnector
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+			}
+			PART
+			{
+				name = strutConnector
+				uid = 2327610746
+				mid = 38231759
+				parent = 6
+				position = -0.604336798191071,-8.73619937896729,-1.04674196243286
+				rotation = -2.823286E-09,0.5,1.053666E-08,-0.8660254
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 15
+				sym = 17
+				sym = 18
+				srfN = srfAttach, 6
+				mass = 0.05
+				temp = -40.1422
+				expt = 0
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = strutConnector
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+			}
+			PART
+			{
+				name = strutConnector
+				uid = 2144171862
+				mid = 38231759
+				parent = 6
+				position = -1.04674196243286,-8.73619937896729,0.60433703660965
+				rotation = 5.454177E-09,-0.2588191,9.446906E-09,-0.9659259
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 15
+				sym = 16
+				sym = 18
+				srfN = srfAttach, 6
+				mass = 0.05
+				temp = -40.12273
+				expt = 0
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = strutConnector
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+			}
+			PART
+			{
+				name = strutConnector
+				uid = 2546225277
+				mid = 38231759
+				parent = 6
+				position = 0.604336977005005,-8.73619937896729,1.04674220085144
+				rotation = 1.053666E-08,-0.8660254,2.823286E-09,-0.5
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 15
+				sym = 16
+				sym = 17
+				srfN = srfAttach, 6
+				mass = 0.05
+				temp = -40.10297
+				expt = 0
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = strutConnector
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+			}
+			PART
+			{
+				name = dockingPort2
+				uid = 4225816268
+				mid = 38231759
+				parent = 6
+				position = -1.19209289550781E-07,-4.25169944763184,-1.20851182937622
+				rotation = -3.090862E-08,0.7071068,-0.7071068,-3.090862E-08
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				srfN = srfAttach, 6
+				attN = None, -1
+				attN = None, -1
+				mass = 0.05
+				temp = -40.04105
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = dockingPort2
 				EVENTS
 				{
 				}
@@ -13746,29 +11988,97 @@ GAME
 				}
 				MODULE
 				{
-					name = ModuleRCS
+					name = ModuleDockingNode
 					isEnabled = True
-					isEnabled = True
+					state = Ready
+					dockUId = 0
+					dockNodeIdx = 0
 					EVENTS
 					{
-						Disable
+						Undock
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						UndockSameVessel
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Decouple
+						{
+							active = False
+							guiActive = True
+							guiIcon = Decouple Node
+							guiName = Decouple Node
+							category = Decouple Node
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						SetAsTarget
 						{
 							active = True
+							guiActive = False
+							guiIcon = Set as Target
+							guiName = Set as Target
+							category = Set as Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						UnsetTarget
+						{
+							active = False
+							guiActive = False
+							guiIcon = Unset Target
+							guiName = Unset Target
+							category = Unset Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						EnableXFeed
+						{
+							active = False
 							guiActive = True
-							guiIcon = Disable RCS Port
-							guiName = Disable RCS Port
-							category = Disable RCS Port
+							guiIcon = Enable Crossfeed
+							guiName = Enable Crossfeed
+							category = Enable Crossfeed
 							guiActiveUnfocused = False
 							unfocusedRange = 2
 							externalToEVAOnly = True
 						}
-						Enable
+						DisableXFeed
 						{
 							active = False
 							guiActive = True
-							guiIcon = Enable RCS Port
-							guiName = Enable RCS Port
-							category = Enable RCS Port
+							guiIcon = Disable Crossfeed
+							guiName = Disable Crossfeed
+							category = Disable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						MakeReferenceTransform
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control from Here
+							guiName = Control from Here
+							category = Control from Here
 							guiActiveUnfocused = False
 							unfocusedRange = 2
 							externalToEVAOnly = True
@@ -13776,7 +12086,11 @@ GAME
 					}
 					ACTIONS
 					{
-						ToggleAction
+						UndockAction
+						{
+							actionGroup = None
+						}
+						DecoupleAction
 						{
 							actionGroup = None
 						}
@@ -13785,11 +12099,11 @@ GAME
 			}
 			ACTIONGROUPS
 			{
-				Stage = True, 244876145.086735
-				Gear = True, 244876149.306737
-				Light = False, 244895924.842219
-				RCS = False, 244876427.907866
-				SAS = False, 244876427.607866
+				Stage = False, 245041625.896185
+				Gear = True, 0
+				Light = False, 0
+				RCS = True, 245040306.376993
+				SAS = True, 245040219.736946
 				Brakes = False, 0
 				Abort = False, 0
 				Custom01 = False, 0
@@ -13813,7 +12127,7 @@ GAME
 			brave = 0.5
 			dumb = 0.5
 			badS = True
-			state = 1
+			state = 0
 			ToD = 244340655.246744
 			idx = 0
 		}
